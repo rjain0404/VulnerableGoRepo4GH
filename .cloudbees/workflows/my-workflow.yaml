@@ -24,9 +24,9 @@ jobs:
         name: Register the artifact
         uses: cloudbees-io/register-build-artifact@v1
         with:
-          name: qe-artifact
-          version: QE-23.6.1
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:QE-23.6.1
+          name: qe-artifact6
+          version: QE-23.6.6
+          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:QE-23.6.6
       - id: upload-binary
         name: Upload binary using action
         uses: cloudbees-io/asset-chain-utils-preprod/upload-binary@v1
@@ -34,4 +34,4 @@ jobs:
           file-path: container-image.tar
           file-type: BINARY_CONTAINER
           debug: "true"
-          alias: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:QE-23.6.1
+          alias: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:QE-23.6.6
