@@ -19,7 +19,7 @@ jobs:
         name: Build container image
         uses: docker://gcr.io/kaniko-project/executor:debug
         run: |
-          /kaniko/executor --context $CLOUDBEES_WORKSPACE --build-arg USER=cbp,TOKEN=${{ secrets.GH_SECURITY_PAT }},FAKE_TOKEN=ghp_JPDyiFAKEWIPhFAKEKY9CFAKE1J2sFAKERmpq --dockerfile $CLOUDBEES_WORKSPACE/Dockerfile --tar-path $CLOUDBEES_WORKSPACE/container-image.tar --no-push
+          /kaniko/executor --context $CLOUDBEES_WORKSPACE --build-arg USER=cbp,TOKEN=${{ secrets.GH_SECURITY_PAT }}
       - id: register-artifact
         name: Register the artifact
         uses: cloudbees-io/register-build-artifact@v1
