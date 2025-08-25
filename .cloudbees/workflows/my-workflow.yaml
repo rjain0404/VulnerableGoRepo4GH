@@ -39,6 +39,6 @@ jobs:
         name: Register the artifact
         uses: cloudbees-io/register-build-artifact@v1
         with:
-          name: qe-artifact6
+          name: qe-artifact7
           version: QE-22.8.2
           url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:QE-22.8.2
