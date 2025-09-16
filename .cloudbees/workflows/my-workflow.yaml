@@ -13,4 +13,4 @@ jobs:
         with:
           labels: nodes
           artifact-id: 8a7eb3a5-6720-48e1-a883-beafbd23ad12
-          target-environment: Pre-Prod-BB
+          target-environment: Pre-Prod-BB 
